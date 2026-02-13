@@ -1,4 +1,5 @@
 import './Star-Button.css';
+import Sound from '../../assets/CROWD_SMALL_CHIL_EC049202.wav'
 
 const StarSvg = () => (
   <svg
@@ -24,8 +25,16 @@ const StarSvg = () => (
 );
 
 const StarButton = () => {
+
+  const play = () => {
+    new Audio(Sound).play()
+  }
+
   return (
-    <button className="star-button">
+    <button 
+      className="star-button"
+      onClick={play}
+    >
       Yes!
       <div className="star-1">
         <StarSvg />

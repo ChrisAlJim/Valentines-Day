@@ -1,0 +1,9 @@
+.sound-container{
+  position: fixed;
+  top: 1vmin;
+  right: 1vmin;
+}
+
+.sound {
+  background: #a0522d;
+}

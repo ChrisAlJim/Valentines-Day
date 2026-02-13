@@ -9,6 +9,7 @@ import pic4 from './assets/IMG_2211.JPG'
 import pic5 from './assets/Image from iOS.jpg'
 import pic6 from './assets/8C2B2DEA-30F7-42E8-B9FC-A9748E013913_4_5005_c.jpeg'
 import pic7 from './assets/98B0F527-5901-49EC-A2DD-34BF1C6D90A0_4_5005_c.jpeg'
+import BackgroundMusic from './features/background_music/BackgroundMusic'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+      <BackgroundMusic/>
       <Section children={<h1>Hey Baby! 👋😊</h1>}></Section>
       <Section children={<h1>Sorry for being late with this... 😔</h1>}></Section>
       <Section children={<h1>I know I've been busy but I still wanted to make something special for you! 🫵😊</h1>}></Section>
