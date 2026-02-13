@@ -1,0 +1,11 @@
+#root {
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}

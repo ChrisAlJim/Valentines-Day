@@ -1,0 +1,57 @@
+.hand {
+  border: 3px solid red;
+  min-width: 20vw;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 0);
+  grid-template-rows: repeat(2, 0);
+  gap: 0;
+  transition: 400ms ease;
+}
+
+.hand:hover {
+  grid-template-columns: repeat(2, 18vmin);
+  grid-template-rows: repeat(2, 22vmin);
+  gap: 5vmin;
+}
+
+.card {
+  position: relative;
+  height: 22vmin;
+}
+
+.card-face {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 16vmin;
+  height: 19vmin;
+  transform-origin: 50% 100%;
+  transform:
+    translateX(-50%)
+    rotate(var(--initial-rotation));
+  
+  /* Image styling */
+  background-size: cover;       /* Ensures image fills the card */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat;
+  
+  border-radius: 1vmin;
+  border: 1px solid white;      /* Changed to white for better contrast with photos */
+  background-color: hsl(240deg, 10%, 10%); /* Fallback color */
+  transition: 400ms ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Optional: adds nice depth */
+}
+
+.hand:hover .card-face {
+  transform:
+    translateX(-50%)
+    rotate(var(--r));
+}
+
+.hand:hover .card-face {
+  transform:
+    translateX(-50%)
+    rotate(var(--r))
+    translateY(-15%); /* Pop up effect */
+  z-index: 10; /* Optional: ensures hovered cards don't clip weirdly */
+}
