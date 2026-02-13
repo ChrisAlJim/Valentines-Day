@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Section from './components/Section'
 import Hand from './features/expand_cards/Hand'
 import pic1 from './assets/IMG_2034.jpg'
