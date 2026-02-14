@@ -20,11 +20,26 @@
   transition: all 500ms cubic-bezier(0.25, 0.8, 0.25, 1); /* Bouncy smooth transition */
 }
 
+@media (max-width: 500px) {
+  .hand {
+    height: 85vmin;
+    width: 85vmin;
+  }
+}
+
 /* HOVER STATE: Expand the grid tracks */
 .hand:hover {
   grid-template-columns: 26vmin 26vmin;
   grid-template-rows: 30vmin 30vmin;
   gap: 2vmin;
+}
+
+@media (max-width:500px) {
+  .hand:hover {
+    grid-template-columns: 35vmin 35vmin;
+    grid-template-rows: 40vmin 40vmin;
+    gap: 2vmin;
+  }
 }
 
 .card {
@@ -69,4 +84,11 @@
     rotate(var(--r)) 
     scale(1.1); /* Slight zoom on expand */
   z-index: 10;
+}
+
+@media (max-width:500px) {
+  .card-face {
+    width: 29vmin;
+    height: 35vmin;
+  }
 }

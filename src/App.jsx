@@ -18,10 +18,10 @@ function App() {
   return (
     <>
       <BackgroundMusic/>
-      <Section children={<h1>Hey Baby! 👋😊</h1>}></Section>
-      <Section children={<h1>Sorry for being late with this... 😔</h1>}></Section>
-      <Section children={<h1>I know I've been busy but I still wanted to make something special for you! 🫵😊</h1>}></Section>
-      <Section children={<h1>Here you go! ✋😚🤚</h1>}></Section>
+      <Section children={<h1 className='thanks'>Hey Baby! 👋😊</h1>}></Section>
+      <Section children={<h1 className='thanks'>Sorry for being late with this... 😔</h1>}></Section>
+      <Section children={<h1 className='thanks'>I know I've been busy but I still wanted to make something special for you! 🫵😊</h1>}></Section>
+      <Section children={<h1 className='thanks'>Here you go! ✋😚🤚</h1>}></Section>
       <Section>
         <h1 className='thanks'>Thank you for always supporting me. Whether it be when I'm sick or stressed you have always been there for me and I haven't thanked you enough for that.</h1>
         <Hand images={myImages}/>
